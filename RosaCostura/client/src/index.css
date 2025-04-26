@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 40% 95%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 120 30% 99%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 120 30% 99%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 342 89% 49%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 342 89% 97%;
+    --secondary-foreground: 342 89% 35%;
+
+    --muted: 120 40% 92%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 342 89% 96%;
+    --accent-foreground: 342 89% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 30% 88%;
+    --input: 120 30% 94%;
+    --ring: 342 89% 49%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 342 89% 49%;
+    --chart-2: 342 89% 60%;
+    --chart-3: 342 89% 70%;
+    --chart-4: 342 89% 80%;
+    --chart-5: 342 89% 90%;
+
+    --sidebar-background: 120 40% 98%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 342 89% 49%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 342 89% 96%;
+    --sidebar-accent-foreground: 342 89% 35%;
+    --sidebar-border: 120 30% 88%;
+    --sidebar-ring: 120 70% 40%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 342 89% 49%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 342 89% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 342 89% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 342 89% 60%;
+
+    --chart-1: 342 89% 49%;
+    --chart-2: 342 89% 60%;
+    --chart-3: 342 89% 70%;
+    --chart-4: 342 89% 80%;
+    --chart-5: 342 89% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
